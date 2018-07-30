@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+<script>
+let cash1=parseFloat(prompt('сколько у вас с собой есть денег?'));
+let bought_apple=parseInt(prompt('сколько вы купили яблок?'));
+let bought_bread=parseInt(prompt('сколько вы купили батонов хлеба?'));
+let cash_all_apple=parseFloat(prompt('сколько стоит одно яблоко?')) * bought_apple;
+let cash_all_bread=parseFloat(prompt('сколько стоит один батон хлеба?')) * bought_bread;
+let answer=cash1-cash_all_apple-cash_all_bread >0 ? true : false;
+document.body.innerHTML='<div>  жлоб чугунный, нам бабла хватит на доширак? </div><div><h2>'+String(answer)+'</h2></div>';
+</script>
+</body>
+</html>
